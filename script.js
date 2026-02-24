@@ -34,17 +34,21 @@ navItems.forEach(item => {
   });
 });
 
-// 控制展開
+// =========================
+// Setlist 子選單動畫版
+// =========================
 const setlistToggle = document.getElementById("setlist-toggle");
 const setlistMenu = document.getElementById("setlist-menu");
 
-setlistToggle.addEventListener("click", () => {
-  if (setlistMenu.style.display === "block") {
-    setlistMenu.style.display = "none";
-    setlistToggle.innerText = "Setlist ▼";
+setlistToggle.addEventListener("click", (e) => {
+  e.stopPropagation(); // 防止影響分頁切換
+
+  setlistMenu.classList.toggle("open");
+
+  if (setlistMenu.classList.contains("open")) {
+    setlistToggle.innerHTML = "Setlist ▲";
   } else {
-    setlistMenu.style.display = "block";
-    setlistToggle.innerText = "Setlist ▲";
+    setlistToggle.innerHTML = "Setlist ▼";
   }
 });
 
@@ -92,3 +96,4 @@ checkboxes.forEach(cb => {
 });
 
 updateProgress();
+
