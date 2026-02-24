@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: "Noto Sans TC", sans-serif;
-  /* background: linear-gradient(135deg, #7EB3AB, #1D6384); */
-  background: linear-gradient(135deg, #ffd6ec, #c8e7ff);
+  /*background: linear-gradient(135deg, #ffd6ec, #c8e7ff)*/;
+  background: linear-gradient(135deg, #7EB3AB, #1D6384); 
   min-height: 100vh;
 }
 
@@ -113,4 +113,5 @@ h1 { margin: 20px; }
 #progress { margin-top: 20px; font-size: 18px; }
 a { margin-left: 10px; text-decoration: none; color: #555; font-size: 18px; }
 a:hover { color: #ff69b4; }
+
 
