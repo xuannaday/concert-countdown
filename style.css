@@ -27,10 +27,11 @@ h1 { margin: 20px; }
   top: 0;
   left: 0;
   background-color: rgba(255,255,255,0.95);
-  overflow-y: auto;     /* 讓選單可以自己滾動 */
+  overflow-y: auto;     /* 整個側邊選單可滾動 */
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 60px;
+  box-sizing: border-box;
 }
 
 .side-nav ul {
@@ -53,16 +54,26 @@ h1 { margin: 20px; }
 /* 子選單動畫滑動效果 */
 .submenu {
   max-height: 0;
-  overflow: hidden;
+  overflow: hidden;       /* 初始隱藏時不要滾動 */
   padding-left: 15px;
   transition: max-height 0.4s ease, opacity 0.3s ease;
   opacity: 0;
 }
 
 .submenu.open {
-  max-height: 1000px;  /* 可以根據內容的實際高度設置 */
-  overflow-y: auto;    /* 展開後可以滾動 */
+  max-height: 60vh;       /* 展開後最多占螢幕 60% 高度 */
+  overflow-y: auto;       /* 展開後可以滾動 */
   opacity: 1;
+}
+
+/* 滾動條美化（可選） */
+.submenu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.submenu::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
 }
 
 /* 讓箭頭旋轉動畫更順 */
@@ -85,15 +96,19 @@ h1 { margin: 20px; }
 
 /* 歌單勾選 */
 #songList { list-style: none; padding: 0; max-width: 400px; margin: auto; }
-#songList li { margin: 10px 0; display: flex; align-items: center; justify-content: space-between; background: white; padding: 10px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+#songList li { 
+  margin: 10px 0; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  background: white; 
+  padding: 10px 15px; 
+  border-radius: 12px; 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+}
 #songList input[type=checkbox] { transform: scale(1.3); margin-right: 10px; }
 #songList label { cursor: pointer; flex-grow: 1; text-align: left; }
 #songList input[type=checkbox]:checked + label { color: #ff69b4; font-weight: bold; }
 #progress { margin-top: 20px; font-size: 18px; }
 a { margin-left: 10px; text-decoration: none; color: #555; font-size: 18px; }
 a:hover { color: #ff69b4; }
-
-
-
-
-
