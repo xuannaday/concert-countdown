@@ -50,6 +50,19 @@ h1 { margin: 20px; }
   background-color: #ffd6ec;
 }
 
+.submenu {
+  display: none;
+  padding-left: 15px;
+}
+
+.submenu li {
+  font-size: 16px;
+}
+
+.submenu-toggle {
+  font-weight: bold;
+}
+
 /* 分頁 */
 .page {
   display: none;
@@ -67,4 +80,5 @@ h1 { margin: 20px; }
 #progress { margin-top: 20px; font-size: 18px; }
 a { margin-left: 10px; text-decoration: none; color: #555; font-size: 18px; }
 a:hover { color: #ff69b4; }
+
 
