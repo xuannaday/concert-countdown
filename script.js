@@ -34,6 +34,20 @@ navItems.forEach(item => {
   });
 });
 
+// 控制展開
+const setlistToggle = document.getElementById("setlist-toggle");
+const setlistMenu = document.getElementById("setlist-menu");
+
+setlistToggle.addEventListener("click", () => {
+  if (setlistMenu.style.display === "block") {
+    setlistMenu.style.display = "none";
+    setlistToggle.innerText = "Setlist ▼";
+  } else {
+    setlistMenu.style.display = "block";
+    setlistToggle.innerText = "Setlist ▲";
+  }
+});
+
 // 演唱會倒數
 const concertDate = new Date("2026-03-07T19:00:00");
 
@@ -78,17 +92,3 @@ checkboxes.forEach(cb => {
 });
 
 updateProgress();
-
-// 控制展開
-const setlistToggle = document.getElementById("setlist-toggle");
-const setlistMenu = document.getElementById("setlist-menu");
-
-setlistToggle.addEventListener("click", () => {
-  if (setlistMenu.style.display === "block") {
-    setlistMenu.style.display = "none";
-    setlistToggle.innerText = "Setlist ▼";
-  } else {
-    setlistMenu.style.display = "block";
-    setlistToggle.innerText = "Setlist ▲";
-  }
-});
