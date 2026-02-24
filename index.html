@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>演唱會倒數 & 練歌清單</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>演唱會倒數 & 歌單分頁</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- 漢堡選單 -->
+<div class="menu">
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <div class="side-nav" id="side-nav">
+    <ul>
+      <li data-song="home">首頁</li>
+      <li data-song="happy">HAPPY</li>
+      <li data-song="zombie">Zombie</li>
+      <!-- 其他歌可以照格式加 -->
+    </ul>
+  </div>
+</div>
+
+<!-- 首頁 -->
+<div class="page" id="home">
   <h1>距離演唱會還有</h1>
   <div id="countdown"></div>
-
   <h2>練歌清單</h2>
   <ul id="songList">
     <li>
-      <input type="checkbox" id="song1" />
+      <input type="checkbox" id="song1">
       <label for="song1">Song A</label>
       <a href="https://open.spotify.com/track/xxxx" target="_blank">🎧 練歌</a>
     </li>
     <li>
-      <input type="checkbox" id="song2" />
+      <input type="checkbox" id="song2">
       <label for="song2">Song B</label>
       <a href="https://open.spotify.com/track/yyyy" target="_blank">🎧 練歌</a>
     </li>
-    <li>
-      <input type="checkbox" id="song3" />
-      <label for="song3">Song C</label>
-      <a href="https://open.spotify.com/track/zzzz" target="_blank">🎧 練歌</a>
-    </li>
   </ul>
   <p id="progress"></p>
+</div>
 
-  <script src="script.js"></script>
+<!-- HAPPY 分頁 -->
+<div class="page" id="happy">
+  <h1>HAPPY - DAY6</h1>
+  <div class="links">
+    <a href="https://www.youtube.com/watch?v=xxxx" target="_blank">YouTube</a> |
+    <a href="https://open.spotify.com/track/xxxx" target="_blank">Spotify</a>
+  </div>
+  <p>HAPPY 練歌提示...</p>
+</div>
+
+<!-- Zombie 分頁 -->
+<div class="page" id="zombie">
+  <h1>Zombie - DAY6</h1>
+  <div class="links">
+    <a href="https://www.youtube.com/watch?v=yyyy" target="_blank">YouTube</a> |
+    <a href="https://open.spotify.com/track/yyyy" target="_blank">Spotify</a>
+  </div>
+  <p>Zombie 練歌提示...</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
