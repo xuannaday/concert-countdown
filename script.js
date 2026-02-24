@@ -30,6 +30,12 @@ function randomQuote() {
   document.getElementById("quote").innerText = quotes[randomIndex];
 }
 
+function copyLink() {
+  navigator.clipboard.writeText(window.location.href);
+  alert("已複製網址！");
+}
+
 setInterval(updateCountdown, 1000);
 updateCountdown();
 randomQuote();
+
