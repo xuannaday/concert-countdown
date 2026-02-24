@@ -79,3 +79,16 @@ checkboxes.forEach(cb => {
 
 updateProgress();
 
+// 控制展開
+const setlistToggle = document.getElementById("setlist-toggle");
+const setlistMenu = document.getElementById("setlist-menu");
+
+setlistToggle.addEventListener("click", () => {
+  if (setlistMenu.style.display === "block") {
+    setlistMenu.style.display = "none";
+    setlistToggle.innerText = "Setlist ▼";
+  } else {
+    setlistMenu.style.display = "block";
+    setlistToggle.innerText = "Setlist ▲";
+  }
+});
