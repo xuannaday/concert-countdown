@@ -19,7 +19,7 @@ h1 { margin: 20px; }
   z-index: 200;
 }
 
-/* 側邊選單 */
+/* ----------------- 側邊選單（高級毛玻璃） ----------------- */
 .side-nav {
   height: 100%;
   width: 0;
@@ -27,12 +27,19 @@ h1 { margin: 20px; }
   z-index: 150;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255,0.95);
-  overflow-y: auto;     /* 整個側邊選單可滾動 */
+
+  /* 半透明毛玻璃效果 */
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+
+  overflow-y: auto;
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 60px;
-  box-sizing: border-box;
+
+  color: #fff;
+  font-weight: 500;
 }
 
 .side-nav ul {
@@ -42,14 +49,16 @@ h1 { margin: 20px; }
 }
 
 .side-nav li {
-  padding: 10px 20px;
+  padding: 12px 20px;
   cursor: pointer;
   font-size: 18px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s;
 }
 
 .side-nav li:hover {
-  background-color: #ffd6ec;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 /* 子選單動畫滑動效果 */
@@ -113,5 +122,6 @@ h1 { margin: 20px; }
 #progress { margin-top: 20px; font-size: 18px; }
 a { margin-left: 10px; text-decoration: none; color: #555; font-size: 18px; }
 a:hover { color: #ff69b4; }
+
 
 
