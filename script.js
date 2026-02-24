@@ -3,7 +3,13 @@ const hamburger = document.getElementById("hamburger");
 const sideNav = document.getElementById("side-nav");
 
 hamburger.addEventListener("click", () => {
-  sideNav.style.width = sideNav.style.width === "250px" ? "0" : "250px";
+  if (sideNav.style.width === "260px") {
+    sideNav.style.width = "0";
+    document.body.style.overflow = "auto";   // 解鎖主頁
+  } else {
+    sideNav.style.width = "260px";
+    document.body.style.overflow = "hidden"; // 鎖住主頁
+  }
 });
 
 // 分頁切換
@@ -14,6 +20,7 @@ function showPage(pageId) {
   pages.forEach(p => p.classList.remove("active"));
   document.getElementById(pageId).classList.add("active");
   sideNav.style.width = "0"; // 點選後收回選單
+  document.body.style.overflow = "auto";
 }
 
 // 首頁預設
@@ -71,3 +78,4 @@ checkboxes.forEach(cb => {
 });
 
 updateProgress();
+
