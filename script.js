@@ -36,26 +36,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Setlist 子選單動畫版（自動抓高度）
-  const setlistToggle = document.getElementById("setlist-toggle");
-  const setlistMenu = document.getElementById("setlist-menu");
+const setlistToggle = document.getElementById("setlist-toggle");
+const setlistMenu = document.getElementById("setlist-menu");
 
-  // 初始高度設為 0
-  setlistMenu.style.height = "0px";
+// 初始設定：隱藏 setlistMenu
+setlistMenu.style.maxHeight = "0";
+setlistMenu.style.opacity = "0";
 
-  setlistToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
+setlistToggle.addEventListener("click", (e) => {
+  e.stopPropagation();
 
-    if (setlistMenu.style.height !== "0px") {
-      // 收起
-      setlistMenu.style.height = "0px";
-      setlistToggle.innerHTML = "Setlist ▼";
-    } else {
-      // 展開：抓內容實際高度
-      setlistMenu.style.height = setlistMenu.scrollHeight + "px";
-      setlistToggle.innerHTML = "Setlist ▲";
-    }
-  });
+  if (setlistMenu.style.maxHeight === "0px" || setlistMenu.style.maxHeight === "") {
+    // 展開：抓取實際高度
+    setlistMenu.style.maxHeight = setlistMenu.scrollHeight + "px";
+    setlistMenu.style.opacity = "1"; // 顯示子選單
+    setlistToggle.innerHTML = "Setlist ▲"; // 更新箭頭
+  } else {
+    // 收起
+    setlistMenu.style.maxHeight = "0";
+    setlistMenu.style.opacity = "0"; // 隱藏子選單
+    setlistToggle.innerHTML = "Setlist ▼"; // 更新箭頭
+  }
+});
 
   // 演唱會倒數
   const concertDate = new Date("2026-03-07T19:00:00");
@@ -102,3 +104,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateProgress();
 });
+
