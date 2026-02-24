@@ -60,7 +60,7 @@ h1 { margin: 20px; }
 }
 
 .submenu.open {
-  max-height: 500px; /* 要大於實際高度 */
+  max-height: 500px;  /* 可以根據內容的實際高度設置 */
   opacity: 1;
 }
 
@@ -72,10 +72,6 @@ h1 { margin: 20px; }
 
 .submenu li {
   font-size: 16px;
-}
-
-.submenu-toggle {
-  font-weight: bold;
 }
 
 /* 分頁 */
@@ -95,6 +91,7 @@ h1 { margin: 20px; }
 #progress { margin-top: 20px; font-size: 18px; }
 a { margin-left: 10px; text-decoration: none; color: #555; font-size: 18px; }
 a:hover { color: #ff69b4; }
+
 
 
 
