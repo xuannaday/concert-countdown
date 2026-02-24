@@ -1,5 +1,5 @@
 // ===== 演唱會倒數 =====
-const concertDate = new Date("2026-03-01T19:30:00"); // 改成你的演唱會日期
+const concertDate = new Date("2026-03-07T19:00:00"); // 改成你的演唱會日期
 
 function updateCountdown() {
   const now = new Date();
@@ -44,3 +44,4 @@ checkboxes.forEach(cb => {
 });
 
 updateProgress();
+
