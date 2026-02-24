@@ -118,10 +118,11 @@ h1 { margin: 20px; }
 }
 #songList input[type=checkbox] { transform: scale(1.3); margin-right: 10px; }
 #songList label { cursor: pointer; flex-grow: 1; text-align: left; }
-#songList input[type=checkbox]:checked + label { color: #ff69b4; font-weight: bold; }
+#songList input[type=checkbox]:checked + label { color: #78ADA3; font-weight: bold; }
 #progress { margin-top: 20px; font-size: 18px; }
 a { margin-left: 10px; text-decoration: none; color: #555; font-size: 18px; }
-a:hover { color: #ff69b4; }
+a:hover { color: #78ADA3; }
+
 
 
 
