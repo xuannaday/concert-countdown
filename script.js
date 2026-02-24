@@ -38,19 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const setlistToggle = document.getElementById("setlist-toggle");
 const setlistMenu = document.getElementById("setlist-menu");
-
-setlistToggle.addEventListener("click", (e) => {
-  e.stopPropagation();
-
-  // 切換 open class
+const setlistArrow = document.getElementById("setlist-arrow");
+  
+setlistToggle.addEventListener("click", () => {
   setlistMenu.classList.toggle("open");
-
-  // 改箭頭
-  if (setlistMenu.classList.contains("open")) {
-    setlistToggle.innerHTML = "Setlist ▲";
-  } else {
-    setlistToggle.innerHTML = "Setlist ▼";
-  }
+  setlistArrow.textContent = setlistMenu.classList.contains("open") ? "▲" : "▼";
 });
 
   // 演唱會倒數
@@ -98,5 +90,6 @@ setlistToggle.addEventListener("click", (e) => {
 
   updateProgress();
 });
+
 
 
