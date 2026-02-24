@@ -1,18 +1,12 @@
-const concertDate = new Date("2026-03-07T19:00:00");
-
-const quotes = [
-  "今天也是為你發光的一天 ✨",
-  "很快就可以見面了 🫶",
-  "這次一定要對到眼！！",
-  "準備好應援了嗎？"
-];
+// ===== 演唱會倒數 =====
+const concertDate = new Date("2026-03-01T19:30:00"); // 改成你的演唱會日期
 
 function updateCountdown() {
   const now = new Date();
   const diff = concertDate - now;
 
   if (diff <= 0) {
-    document.getElementById("countdown").innerHTML = "今天就是那天！！！🎉";
+    document.getElementById("countdown").innerHTML = "今天就是演唱會！！！🎉";
     return;
   }
 
@@ -25,17 +19,28 @@ function updateCountdown() {
     `${days}天 ${hours}時 ${minutes}分 ${seconds}秒`;
 }
 
-function randomQuote() {
-  const randomIndex = Math.floor(Math.random() * quotes.length);
-  document.getElementById("quote").innerText = quotes[randomIndex];
-}
-
-function copyLink() {
-  navigator.clipboard.writeText(window.location.href);
-  alert("已複製網址！");
-}
-
 setInterval(updateCountdown, 1000);
 updateCountdown();
-randomQuote();
 
+// ===== 勾選保存狀態 =====
+const checkboxes = document.querySelectorAll("#songList input[type=checkbox]");
+
+function updateProgress() {
+  const done = Array.from(checkboxes).filter(cb => cb.checked).length;
+  const total = checkboxes.length;
+  document.getElementById("progress").innerText = `已練 ${done}/${total} 首`;
+}
+
+checkboxes.forEach(cb => {
+  // 讀取 localStorage
+  const saved = localStorage.getItem(cb.id);
+  if (saved === "true") cb.checked = true;
+
+  // 監聽勾選
+  cb.addEventListener("change", () => {
+    localStorage.setItem(cb.id, cb.checked);
+    updateProgress();
+  });
+});
+
+updateProgress();
