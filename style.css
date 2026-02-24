@@ -27,6 +27,7 @@ h1 { margin: 20px; }
   top: 0;
   left: 0;
   background-color: rgba(255,255,255,0.95);
+  overflow-y: auto;     /* 讓選單可以自己滾動 */
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 60px;
@@ -66,3 +67,4 @@ h1 { margin: 20px; }
 #progress { margin-top: 20px; font-size: 18px; }
 a { margin-left: 10px; text-decoration: none; color: #555; font-size: 18px; }
 a:hover { color: #ff69b4; }
+
