@@ -39,23 +39,17 @@ document.addEventListener("DOMContentLoaded", () => {
 const setlistToggle = document.getElementById("setlist-toggle");
 const setlistMenu = document.getElementById("setlist-menu");
 
-// 初始設定：隱藏 setlistMenu
-setlistMenu.style.maxHeight = "0";
-setlistMenu.style.opacity = "0";
-
 setlistToggle.addEventListener("click", (e) => {
   e.stopPropagation();
 
-  if (setlistMenu.style.maxHeight === "0px" || setlistMenu.style.maxHeight === "") {
-    // 展開：抓取實際高度
-    setlistMenu.style.maxHeight = setlistMenu.scrollHeight + "px";
-    setlistMenu.style.opacity = "1"; // 顯示子選單
-    setlistToggle.innerHTML = "Setlist ▲"; // 更新箭頭
+  // 切換 open class
+  setlistMenu.classList.toggle("open");
+
+  // 改箭頭
+  if (setlistMenu.classList.contains("open")) {
+    setlistToggle.innerHTML = "Setlist ▲";
   } else {
-    // 收起
-    setlistMenu.style.maxHeight = "0";
-    setlistMenu.style.opacity = "0"; // 隱藏子選單
-    setlistToggle.innerHTML = "Setlist ▼"; // 更新箭頭
+    setlistToggle.innerHTML = "Setlist ▼";
   }
 });
 
@@ -104,4 +98,5 @@ setlistToggle.addEventListener("click", (e) => {
 
   updateProgress();
 });
+
 
