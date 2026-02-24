@@ -38,7 +38,7 @@ h1 { margin: 20px; }
   transition: 0.3s;
   padding-top: 60px;
 
-  color: #fff;
+  color: #072E41;
   font-weight: 500;
 }
 
@@ -58,7 +58,7 @@ h1 { margin: 20px; }
 
 .side-nav li:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  color: #072E41;
 }
 
 /* 子選單動畫滑動效果 */
@@ -122,6 +122,7 @@ h1 { margin: 20px; }
 #progress { margin-top: 20px; font-size: 18px; }
 a { margin-left: 10px; text-decoration: none; color: #555; font-size: 18px; }
 a:hover { color: #ff69b4; }
+
 
 
 
