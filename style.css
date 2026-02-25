@@ -138,8 +138,8 @@ a:hover { color: #78ADA3; }
   padding-bottom: 56.25%; /* 16:9 比例 */
   height: 0;
   overflow: hidden;
-  max-width: 800px;      /* 最大寬度 */
-  max-height: 450px;
+  max-width: 600px;      /* 電腦最大寬度 */
+  max-height: 338px;     /* 電腦最大高度 */
   margin: 0 auto;        /* 置中 */
 }
 
@@ -154,12 +154,15 @@ a:hover { color: #78ADA3; }
 /* 圖片 */
 .below-image {
   display: block;
-  margin: 15px auto 0;
-  max-width: 90%;
-  height: auto;
+  margin: 15px auto 0;      /* 上方距離 15px，置中 */
+  max-width: 600px;         /* 最大寬度 */
+  max-width: 90%;           /* 手機自動縮放 */
+  max-height: 338px;        /* 最大高度 */
+  height: auto;             /* 保持比例 */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
