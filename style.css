@@ -12,8 +12,10 @@ h1 { margin: 20px; }
 
 /* 計數器容器置中 */
 .counter {
+  position: fixed;
   text-align: center; /* 只讓計數器圖片置中 */
   margin-top: 20px;   /* 可調整上下距離 */
+  bottom: 20px;       /* 與底部保持距離 */
 }
 
 /* 漢堡按鈕 */
@@ -128,6 +130,7 @@ h1 { margin: 20px; }
 #progress { margin-top: 20px; font-size: 18px; }
 a { margin-left: 10px; text-decoration: none; color: #555; font-size: 18px; }
 a:hover { color: #78ADA3; }
+
 
 
 
