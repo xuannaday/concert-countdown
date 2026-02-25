@@ -151,6 +151,15 @@ a:hover { color: #78ADA3; }
   height: 100%;
 }
 
+/* 圖片 */
+.below-image {
+  display: block;
+  margin: 15px auto 0;
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 
 
 
