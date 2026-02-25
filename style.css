@@ -139,6 +139,7 @@ a:hover { color: #78ADA3; }
   height: 0;
   overflow: hidden;
   max-width: 800px;      /* 最大寬度 */
+  max-height: 450px;
   margin: 0 auto;        /* 置中 */
 }
 
@@ -149,6 +150,7 @@ a:hover { color: #78ADA3; }
   width: 100%;
   height: 100%;
 }
+
 
 
 
