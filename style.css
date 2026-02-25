@@ -138,7 +138,8 @@ a:hover { color: #78ADA3; }
   padding-bottom: 56.25%; /* 16:9 比例 */
   height: 0;
   overflow: hidden;
-  max-width: 100%;
+  max-width: 800px;      /* 最大寬度 */
+  margin: 0 auto;        /* 置中 */
 }
 
 .video-container iframe {
@@ -148,6 +149,7 @@ a:hover { color: #78ADA3; }
   width: 100%;
   height: 100%;
 }
+
 
 
 
