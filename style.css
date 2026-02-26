@@ -12,8 +12,7 @@ h1 { margin: 20px; }
 
 /* 計數器容器置中 */
 .counter {
-  position: fixed;
-  text-align: center;           /* 只讓計數器圖片置中 */
+  text-align: center;           /* 讓計數器圖片置中 */
   margin-top: 20px;             /* 可調整上下距離 */
   bottom: 20px;                 /* 與底部保持距離 */
   left: 50%;                    /* 先到中間 */
@@ -160,6 +159,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
