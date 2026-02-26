@@ -12,11 +12,9 @@ h1 { margin: 20px; }
 
 /* 計數器容器置中 */
 .counter {
-  text-align: center;           /* 讓計數器圖片置中 */
-  margin-top: 20px;             /* 可調整上下距離 */
-  bottom: 20px;                 /* 與底部保持距離 */
-  left: 50%;                    /* 先到中間 */
-  transform: translateX(-50%);  /* 再往回拉一半 */
+  display: block;      /* 讓 margin auto 生效 */
+  margin: 20px auto;   /* 上下 20px，左右自動置中 */
+  text-align: center;  /* 如果裡面是 inline 內容，也會置中 */
 }
 
 /* 漢堡按鈕 */
@@ -159,6 +157,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
