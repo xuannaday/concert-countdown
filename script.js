@@ -77,7 +77,8 @@ setlistToggle.addEventListener("click", () => {
     const done = Array.from(checkboxes).filter(cb => cb.checked).length;
     const total = checkboxes.length;
     const el = document.getElementById("progress");
-    if (el) el.innerText = `已練 ${done}/${total} 首`;
+   // if (el) el.innerText = `已練 ${done}/${total} 首`;
+    if (el) el.innerText = ` ${done}/${total} `;
   }
 
   checkboxes.forEach(cb => {
@@ -91,6 +92,7 @@ setlistToggle.addEventListener("click", () => {
 
   updateProgress();
 });
+
 
 
 
