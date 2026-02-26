@@ -132,7 +132,7 @@ a:hover { color: #78ADA3; }
 
 .video-container {
   position: relative;
-  /*padding-bottom: 56.25%;  16:9 比例 */
+  padding-bottom: 56.25%; /* 16:9 比例 */
   height: 0;
   overflow: hidden;
   max-width: 600px;      /* 電腦最大寬度 */
@@ -157,6 +157,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
