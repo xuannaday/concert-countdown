@@ -46,8 +46,7 @@ setlistToggle.addEventListener("click", () => {
 });
 
   // 演唱會倒數
-  // const concertDate = new Date("2026-03-07T19:00:00");
-  const concertDate = new Date("2026-03-07T19:00");
+  const concertDate = new Date("2026-03-07T19:00:00");
   
   function updateCountdown() {
     const now = new Date();
@@ -64,7 +63,8 @@ setlistToggle.addEventListener("click", () => {
     const hours = Math.floor((diff / (1000*60*60)) % 24);
     const minutes = Math.floor((diff / (1000*60)) % 60);
     const seconds = Math.floor((diff / 1000) % 60);
-    el.innerHTML = `${days}天 ${hours}時 ${minutes}分 ${seconds}秒`;
+    // el.innerHTML = `${days}天 ${hours}時 ${minutes}分 ${seconds}秒`;
+    el.innerHTML = `${days}天 ${hours}時 ${minutes}分`;
   }
 
   setInterval(updateCountdown, 1000);
@@ -91,6 +91,7 @@ setlistToggle.addEventListener("click", () => {
 
   updateProgress();
 });
+
 
 
 
