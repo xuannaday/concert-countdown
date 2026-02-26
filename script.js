@@ -46,8 +46,9 @@ setlistToggle.addEventListener("click", () => {
 });
 
   // 演唱會倒數
-  const concertDate = new Date("2026-03-07T19:00:00");
-
+  // const concertDate = new Date("2026-03-07T19:00:00");
+  const concertDate = new Date("2026-03-07T19:00");
+  
   function updateCountdown() {
     const now = new Date();
     const diff = concertDate - now;
@@ -90,6 +91,7 @@ setlistToggle.addEventListener("click", () => {
 
   updateProgress();
 });
+
 
 
 
