@@ -17,6 +17,12 @@ h1 { margin: 20px; }
   text-align: center;  /* 如果裡面是 inline 內容，也會置中 */
 }
 
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 /* 漢堡按鈕 */
 .hamburger {
   font-size: 28px;
@@ -24,6 +30,13 @@ h1 { margin: 20px; }
   padding: 10px 20px;
   position: fixed;
   z-index: 200;
+}
+
+/* 網站標題 */
+.site-title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /* ----------------- 側邊選單（高級毛玻璃） ----------------- */
@@ -172,6 +185,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
