@@ -20,7 +20,8 @@ h1 { margin: 20px; }
 .menu-header {
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: center;
+  position: relative;
 }
 
 /* 漢堡按鈕 */
@@ -185,6 +186,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
