@@ -35,7 +35,7 @@ h5 {
 
 .menu-header {
   display: flex;
-  position: relative;
+  position: fixed;
   top: 0;               /* 頂端對齊 */
   left: 0;              /* 左邊對齊 */
   width: 100%;          /* 寬度填滿整個螢幕 */
@@ -48,7 +48,6 @@ h5 {
   font-size: 20px;
   font-weight: bold;
   padding: 20px 55px;  /* 上下左右 */
-  position: fixed;      /* 固定在畫面頂端 */
   letter-spacing: 2px;
   color: #072E41;
 }
@@ -58,8 +57,7 @@ h5 {
   font-size: 28px;
   cursor: pointer;
   padding: 10px 20px;
-  position: fixed;
-  z-index: 200;
+  z-index: 1100;  /* 高於標題列 */
 }
 
 .title-wrap {
@@ -215,6 +213,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
