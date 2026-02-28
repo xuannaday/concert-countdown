@@ -38,15 +38,6 @@ h5 {
   position: relative;
 }
 
-/* 漢堡按鈕 */
-.hamburger {
-  font-size: 28px;
-  cursor: pointer;
-  padding: 10px 20px;
-  position: fixed;
-  z-index: 200;
-}
-
 /* 網站標題 */
 .site-title {
   font-size: 20px;
@@ -60,6 +51,15 @@ h5 {
   color: #072E41;
   background-color: #F5F5F5;  /* 背景色 */
   z-index: 1000;        /* 避免被其他元素蓋住 */
+}
+
+/* 漢堡按鈕 */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 200;
 }
 
 .title-wrap {
@@ -215,6 +215,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
