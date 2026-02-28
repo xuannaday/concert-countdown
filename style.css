@@ -40,7 +40,7 @@ h5 {
   left: 0;              /* 左邊對齊 */
   width: 100%;          /* 寬度填滿整個螢幕 */
   background-color: #F5F5F5;  /* 背景色 */
-  padding: 5px 20px;          /* 上下 左右 */
+  padding: 10px 20px;          /* 上下 左右 */
   z-index: 1000;        /* 避免被其他元素蓋住 */
 }
 
@@ -214,6 +214,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
