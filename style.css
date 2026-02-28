@@ -51,9 +51,9 @@ h5 {
 
 /* 網站標題 */
 .site-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 3px 10px;  /* 上下左右 */
+  padding: 4px 10px;  /* 上下左右 */
   letter-spacing: 2px;
   color: #072E41;
 }
@@ -68,9 +68,10 @@ h5 {
 
 .title-wrap {
   display: flex;
-  text-align: center;
+  justify-content: center;   /* 整組置中 */
   align-items: center;
   gap: 10px; /* 中間間距 */
+  text-align: center;
 }
 
 /* ----------------- 側邊選單（高級毛玻璃） ----------------- */
@@ -220,6 +221,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
