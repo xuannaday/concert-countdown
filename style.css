@@ -16,6 +16,11 @@ h1 {
   margin: 10px 15px 20px;
 }
 
+h4 { 
+  margin: 15px; 
+  font-size: 16px;
+}
+
 h5 { 
   margin: 15px; 
   font-size: 16px;
@@ -46,10 +51,15 @@ h5 {
 .site-title {
   font-size: 20px;
   font-weight: bold;
-  padding: 20px 55px;  /* 上下 左右*/
-  position: fixed;
+  padding: 20px 55px;  /* 上下左右 */
+  position: fixed;      /* 固定在畫面頂端 */
+  top: 0;               /* 頂端對齊 */
+  left: 0;              /* 左邊對齊 */
+  width: 100%;          /* 寬度填滿整個螢幕 */
   letter-spacing: 2px;
   color: #072E41;
+  background-color: #F5F5F5;  /* 背景色 */
+  z-index: 1000;        /* 避免被其他元素蓋住 */
 }
 
 .title-wrap {
@@ -205,6 +215,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
