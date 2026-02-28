@@ -7,8 +7,12 @@ body {
   min-height: 100vh;
 }
 
-h1 { margin: 20px; }
-.links { margin: 10px 0 20px; }
+h1 { margin: 15px; }
+
+.links { 
+  margin: 10px 20px 20px;
+}
+
 
 /* 計數器容器置中 */
 .counter {
@@ -37,6 +41,7 @@ h1 { margin: 20px; }
   font-weight: bold;
   padding: 20px 55px;  /* 上下 左右*/
   letter-spacing: 2px;
+  color: #78ADA3;  /* 文字顏色 */
 }
 
 .title-wrap {
@@ -191,5 +196,6 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
