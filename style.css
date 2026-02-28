@@ -48,7 +48,7 @@ h5 {
 .site-title {
   font-size: 20px;
   font-weight: bold;
-  padding: 20px 55px;  /* 上下左右 */
+  padding: 10px 55px;  /* 上下左右 */
   letter-spacing: 2px;
   color: #072E41;
 }
@@ -214,6 +214,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
