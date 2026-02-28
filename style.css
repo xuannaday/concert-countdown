@@ -125,7 +125,7 @@ h1 { margin: 20px; }
 /* 分頁 */
 .page {
   display: none;
-  padding: 35px 20px 20px;  /* 上   左右   下 */
+  padding: 20px 20px 20px;  /* 上   左右   下 */
 }
 
 .page.active { display: block; }
@@ -162,7 +162,7 @@ a:hover { color: #78ADA3; }
 /* 平板 (768px 以上) */
 @media (min-width: 768px) {
   .video-container {
-    max-width: 500px;
+ /* max-width: 500px;*/
     margin: 0 auto;
   }
 }
@@ -191,4 +191,5 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
