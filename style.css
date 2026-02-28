@@ -13,10 +13,13 @@ h1 {
 }
 
 .links { 
-  margin: 10px 20px 20px;
+  margin: 10px 15px 20px;
 }
 
-
+h4 { 
+  margin: 15px; 
+  font-size: 16px;
+}
 /* 計數器容器置中 */
 .counter {
   display: block;      /* 讓 margin auto 生效 */
@@ -200,6 +203,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
