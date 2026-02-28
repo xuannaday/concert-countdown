@@ -35,7 +35,7 @@ h1 { margin: 20px; }
 .site-title {
   font-size: 20px;
   font-weight: bold;
-  padding: 25px 50px;
+  padding: 22px 55px;
   letter-spacing: 2px;
 }
 
@@ -185,6 +185,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
