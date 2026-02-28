@@ -171,6 +171,7 @@ a:hover { color: #78ADA3; }
 @media (min-width: 768px) {
   .video-container {
  /* max-width: 500px;*/
+    width: 90%;        /* 影片寬度為畫面寬度的 80% */
     margin: 0 auto;
   }
 }
@@ -199,6 +200,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
