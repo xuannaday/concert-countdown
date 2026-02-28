@@ -35,8 +35,15 @@ h1 { margin: 20px; }
 .site-title {
   font-size: 20px;
   font-weight: bold;
-  padding: 22px 55px;
+  padding: 20px 55px;  /* 上下 左右*/
   letter-spacing: 2px;
+  color: #78ADA3;
+}
+
+.title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 中間間距 */
 }
 
 /* ----------------- 側邊選單（高級毛玻璃） ----------------- */
@@ -119,7 +126,7 @@ h1 { margin: 20px; }
 /* 分頁 */
 .page {
   display: none;
-  padding: 80px 20px 20px;
+  padding: 35px 20px 20px;  /* 上   左右   下 */
 }
 
 .page.active { display: block; }
@@ -185,28 +192,3 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
