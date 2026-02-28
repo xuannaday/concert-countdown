@@ -7,7 +7,10 @@ body {
   min-height: 100vh;
 }
 
-h1 { margin: 15px; }
+h1 { 
+  margin: 15px; 
+  font-size: 24px;
+}
 
 .links { 
   margin: 10px 20px 20px;
@@ -196,6 +199,7 @@ a:hover { color: #78ADA3; }
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 
 
 
